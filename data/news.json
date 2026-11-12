@@ -1,0 +1,14 @@
+
+{
+  "news": [
+    {
+      "id": "noticia-001",
+      "title": "Joven enamorado",
+      "date": "2026-11-11",
+      "summary": "Te adoro, Alisson ❤.",
+      "image": "assets/images/noticias/noticia-001.jpg",
+      "url": "pages/novedades.html",
+      "published": true
+    }
+  ]
+}
