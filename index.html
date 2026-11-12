@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Grupo de Investigación en Farmacognosia y Medicina Tradicional de la UNMSM">
+    <title>Farmacognosia y Medicina Tradicional | UNMSM</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="site-header">
+        <a href="index.html" class="brand">
+            <img
+                src="assets/logo/logo.png"
+                alt="Logotipo del Grupo"
+                class="brand-logo"
+            >
+            <div class="brand-text">
+                <h1 class="brand-title">Farmacognosia y <br>Medicina Tradicional</h1>
+                <span>UNMSM - Facultad de Farmacia y Bioquímica</span>
+            </div>
+        </a>
+        <div class="header-divider"></div>
+        <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+            <a href="index.html" 
+                class="nav-link active"
+                aria-current="page">
+                Inicio
+            </a>
+            <details class="nav-dropdown">
+                <summary class="nav-link">
+                    Nosotros
+                    <span class="dropdown-arrow">▼</span>
+                </summary>
+                <div class="dropdown-menu">
+                    <a href="pages/nosotros.html#quienes-somos">Quienes Somos</a>
+                    <a href="pages/nosotros.html#mision">Misión y Visión</a>
+                </div>
+            </details>
+            <details class="nav-dropdown">
+                <summary class="nav-link">
+                    Investigación
+                    <span class="dropdown-arrow">▼</span>
+                </summary>
+                <div class="dropdown-menu">
+                    <a href="pages/investigacion.html">Líneas de Investigación</a>
+                    <a href="pages/investigacion.html#proyectos">Proyectos</a>
+                </div>
+            </details>
+            <a href="pages/equipo.html" class="nav-link">Equipo</a>
+            <a href="pages/novedades.html" class="nav-link">Novedades</a>
+            <a href="pages/contacto.html" class="nav-link">Contacto</a>
+        </nav>
+        <button
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-controls="main-nav"
+            aria-expanded="false"
+            aria-label="Abrir menú"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </header>
+    <main>
+        <section class="hero">
+            <img 
+                src="assets/images/portada/portada.png" 
+                alt="Vegetación y especies botánicas de interés farmacognóstico" 
+                class="hero-image">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <span class="hero-label">
+                    GRUPO DE INVESTIGACIÓN · UNMSM
+                </span>
+                <h2 class="hero-title">
+                    Donde la naturaleza se encuentra con la ciencia.
+                </h2>
+                <p class="hero-description">
+                    Exploramos el potencial de los recursos naturales y el conocimiento tradicional mediante la investigación científica.
+                </p>
+                <a 
+                    href="pages/investigacion.html#lineas" 
+                    class="hero-button"
+                >
+                    Conoce nuestras líneas de investigación →
+                </a>
+            </div>
+        </section>
+        <section class="quick-access" aria-label="Accesos rápidos">
+            <div class="quick-access-container">
+                <a href="pages/publicaciones.html" 
+                   class="quick-access-item">
+                    <img 
+                        src="assets/icons/publicaciones.png" 
+                        alt="Icono de publicaciones" 
+                        class="quick-access-icon">
+                    <span>
+                        Publicaciones<br>
+                        científicas
+                    </span>
+                </a>
+                <a href="pages/equipo.html" 
+                   class="quick-access-item">
+                    <img 
+                        src="assets/icons/equipo.png" 
+                        alt="Icono de equipo" class="quick-access-icon">
+                    <span>
+                        Nuestro<br>
+                        equipo
+                    </span>
+                </a>
+                <a href="pages/novedades.html" 
+                   class="quick-access-item">
+                    <img 
+                       src="assets/icons/novedades.png" 
+                       alt="Icono de contacto" 
+                       class="quick-access-icon">
+                    <span>
+                        Noticias y<br>
+                        actividades</span>
+                </a>
+            </div>
+        </section>
+        <section class="home-information">
+            <div class="information-container">
+                <article class="information-card identity-card">
+                    <span class="section-label">
+                        NUESTRA IDENTIDAD
+                    </span>
+                    <h2>Conocimiento que nace de la naturaleza</h2>
+                    <p>
+                         Somos un grupo de investigación dedicado al estudio de la farmacognosia y al valor de las plantas medicinales en el campo farmacéutico.
+                    </p>
+                    <a 
+                       href="pages/nosotros.html" 
+                       class="section-button">
+                        Conoce más
+                    </a>
+                </article>
+                <article class="information-card research-card">
+                    <span class="section-label">
+                        INVESTIGACIÓN
+                    </span>
+                    <h2>Nuestros campos de estudio</h2>
+                    <p>
+                        Exploramos la biodiversidad peruana y sus aplicaciones potenciales en el ámbito de la salud.
+                    </p>
+                    <a 
+                       href="pages/investigacion.html" 
+                       class="section-button">
+                        Explora líneas
+                    </a>
+                </article>
+                <article class="information-card news-card">
+                    <span class="section-label">
+                        ACTUALIDAD
+                    </span>
+                    <h2>Últimas noticias</h2>
+                    <div id="latest-news" aria-live="polite">
+                        <p>Próximamente</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="join-section"
+                    aria-label="join-title">
+                <div class="join-container">
+                    <div class="join-decoration" aria-hidden="true">
+                        <img
+                            src="assets/images/decoracion/hojas.png"
+                            alt="Icono"
+                            loading="lazy">
+                    </div>
+                    <div class="join-icon" aria-hidden="true">
+                        <img
+                            src="assets/icons/estudiantes.svg"
+                            alt="">
+                    </div>
+                    <div class="join-content">
+                        <h2 class="join-title">
+                            La investigación también empieza contigo.
+                        </h2>
+                        <p class="join-description">
+                            Si eres estudiante y te apasiona la ciencia, ¡únete a nuestro grupo!
+                        </p>
+                    </div>
+                    <a 
+                       href="pages/contacto.html" 
+                       class="join-button">
+                        Quiero formar parte →
+                    </a>
+                </div>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <a href="index.html" class="footer-brand">
+                <img
+                    src="assets/logo/logo-invertido.png"
+                    alt="logo"
+                    class="footer-logo"
+                    loading="lazy"
+                >
+                <div class="footer-brand-text">
+                    <span class="footer-group-name">
+                        Farmacognosia y<br>
+                        Medicina Tradicional
+                    </span>
+                    <span class="footer-university">
+                        Facultad de Farmacia y Bioquímica
+                    </span>
+                </div>
+            </a>
+            <p class="footer-motto">
+                Investigación · Formación · Conocimiento
+            </p>
+            <div class="footer-right">
+                <nav class="footer-social"
+                     aria-label="Redes sociales y contacto">
+                    <a href="#"
+                       class="footer-social-link"
+                       aria-label="YouTube"
+                       data-pending="true">
+                        <img
+                            src="assets/icons/youtube.svg"
+                            alt=""
+                        >
+                    </a>
+                    <a href="#"
+                       class="footer-social-link"
+                       aria-label="Instagram"
+                       data-pending="true">
+                        <img
+                            src="assets/icons/instagram.svg"
+                            alt=""
+                        >
+                    </a>
+                    <a href="pages/contacto.html"
+                       class="footer-social-link"
+                       aria-label="Contacto">
+                        <img
+                            src="assets/icons/gmail.svg"
+                            alt=""
+                        >
+                    </a>
+                </nav>
+            <div class="footer-divider"></div>
+                <div class="footer-institution">
+                    <img
+                        src="assets/logo/unmsm.svg"
+                        alt=""
+                        class="footer-unmsm-logo"
+                        loading="lazy"
+                    >
+                    <span>UNMSM</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/news.js"></script>
+</body>
+</html>
