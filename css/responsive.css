@@ -1,0 +1,396 @@
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+
+    .site-header {
+        min-height: 85px;
+        padding: 10px 5%;
+    }
+
+    .brand {
+        gap: 10px;
+    }
+
+    .brand-logo {
+        width: 58px;
+        height: 62px;
+    }
+
+    .brand-text h1 {
+        font-size: 19px;
+    }
+
+    .brand-text span {
+        font-size: 13px;
+    }
+
+    .header-divider {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        padding: 10px;
+    }
+
+    .menu-toggle span {
+        width: 26px;
+        height: 2px;
+
+        background-color: var(--primary-color);
+        border-radius: 5px;
+    }
+
+    .main-nav {
+        display: none;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+        padding: 20px 5%;
+
+        box-sizing: border-box;
+
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+
+        background-color: var(--background-color);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .main-nav.open {
+        display: flex;
+    }
+
+    .nav-link {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .dropdown-menu {
+        position: static;
+        margin: 5px 0 5px 15px;
+
+        box-shadow: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .brand-logo {
+        width: 48px;
+        height: 52px;
+    }
+
+    .brand-text h1 {
+        font-size: 16px;
+    }
+
+    .brand-text span {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .hero {
+        min-height: 420px;
+    }
+
+    .hero-content {
+        padding: 55px 6%;
+    }
+
+    .hero-title {
+        font-size: clamp(32px, 6vw, 44px);
+    }
+
+    .hero-description {
+        font-size: 17px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .hero {
+        min-height: 430px;
+    }
+
+    .hero-content {
+        padding: 45px 22px;
+    }
+
+    .hero-label {
+        font-size: 11px;
+    }
+
+    .hero-title {
+        font-size: 34px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-button {
+        width: 100%;
+        padding: 0 15px;
+
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .hero-label::before,
+    .hero-label::after {
+        width: 22px;
+        flex-shrink: 0;
+    }
+
+    .hero-title {
+        overflow-wrap: break-word;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .quick-access-container {
+        padding: 10px 15px;
+    }
+
+    .quick-access-item {
+        gap: 10px;
+        padding: 12px 8px;
+    }
+
+    .quick-access-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .quick-access-item span {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .quick-access-container {
+        grid-template-columns: 1fr;
+        padding: 12px 22px;
+    }
+
+    .quick-access-item {
+        justify-content: flex-start;
+
+        padding: 14px 12px;
+        gap: 18px;
+    }
+
+    .quick-access-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .quick-access-item span {
+        font-size: 15px;
+    }
+
+    .quick-access-item:not(:last-child)::after {
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: auto;
+
+        width: 100%;
+        height: 1px;
+
+        background-color: rgba(30, 64, 42, 0.25);
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .information-container {
+        grid-template-columns: 1fr;
+    }
+
+    .information-card {
+        padding: 25px 10px;
+    }
+
+    .information-card:not(:last-child) {
+        border-right: none;
+        border-bottom: 2px solid var(--primary-color);
+    }
+
+    .information-card h2 {
+        font-size: 30px;
+    }
+
+    .section-button {
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .latest-news-item {
+        gap: 12px;
+    }
+
+    .latest-news-item img {
+        width: 105px;
+        height: 100px;
+    }
+
+    .latest-news-content h3 {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .join-container {
+        gap: 20px;
+        padding: 20px 25px;
+    }
+
+    .join-decoration {
+        display: none;
+    }
+
+    .join-content h2 {
+        font-size: 23px;
+    }
+
+    .join-content p {
+        font-size: 14px;
+    }
+
+    .join-button {
+        padding: 0 18px;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .join-section {
+        padding: 10px 15px 20px;
+    }
+
+    .join-container {
+        flex-direction: column;
+        align-items: center;
+
+        gap: 15px;
+        padding: 25px 20px;
+
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    .join-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .join-content h2 {
+        font-size: 25px;
+    }
+
+    .join-content p {
+        font-size: 14px;
+    }
+
+    .join-button {
+        width: 100%;
+        max-width: 260px;
+
+        box-sizing: border-box;
+    }
+
+}
+
+@media (max-width: 1100px) {
+
+    .footer-container {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        gap: 25px;
+        padding: 25px;
+    }
+
+    .footer-motto {
+        white-space: normal;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+
+        gap: 25px;
+        padding: 30px 20px;
+    }
+
+    .footer-brand {
+        justify-content: center;
+    }
+
+    .footer-logo {
+        width: 60px;
+        height: 65px;
+    }
+
+    .footer-group-name {
+        font-size: 18px;
+    }
+
+    .footer-motto {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .footer-right {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .footer-divider {
+        width: 80px;
+        height: 1px;
+    }
+
+    .footer-institution {
+        justify-content: center;
+    }
+
+}
