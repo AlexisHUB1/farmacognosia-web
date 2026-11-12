@@ -45,7 +45,7 @@
         width: 26px;
         height: 2px;
 
-        background-color: var(--color-primary);
+        background-color: var(--primary-color);
         border-radius: 5px;
     }
 
@@ -65,7 +65,7 @@
         align-items: stretch;
         gap: 8px;
 
-        background-color: var(--color-background);
+        background-color: var(--background-color);
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
     }
 
